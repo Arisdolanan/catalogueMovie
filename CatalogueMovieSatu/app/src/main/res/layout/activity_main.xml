@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_main_horizonal"
+    android:orientation="vertical"
+    tools:context="com.hokagelab.www.cataloguemovie.MainActivity">
+
+<!--Untuk test pertama kali muncul title movie-->
+    <!--<TextView-->
+        <!--android:id="@+id/tv_helloworld"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="@dimen/activity_main_vertikal"-->
+        <!--android:text="HelloWorld"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Home"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/imageButton2"
+            android:layout_toStartOf="@+id/imageButton2"
+            android:hint="Search Here"
+            android:textAlignment="center"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColorLink="@android:color/darker_gray" />
+
+        <Button
+            android:id="@+id/btn_cari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cari"
+            android:layout_weight="0.1"
+            />
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/img_button"-->
+            <!--android:layout_width="38dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:background="@drawable/search_bulat"-->
+            <!--app:srcCompat="@drawable/ic_search_black_24dp" />-->
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
