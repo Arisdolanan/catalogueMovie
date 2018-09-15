@@ -1,4 +1,3 @@
-[![Country](https://img.shields.io/badge/country-indonesia-blue.svg)](#)
 # CatalogueMovie
 Project Catalogue Movie 1 (https://www.dicoding.com/academies/14)
 # Screenshot
